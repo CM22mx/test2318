@@ -217,7 +217,11 @@ explore: test {}
 
 explore: test_space_in_column_name {}
 
-explore: users {}
+explore: users {
+  always_filter:  {
+    filters:  [users.city: "Abbeville,Adel", users.state: "Florida, Texas"]
+  }
+}
 
 explore: user_data {
   join: users {
