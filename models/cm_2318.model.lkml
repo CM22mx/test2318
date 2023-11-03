@@ -20,6 +20,8 @@ explore: billion_orders {
   }
 ####### test
 ############
+##### testing comments
+
 
   join: users {
     type: left_outer
