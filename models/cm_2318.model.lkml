@@ -2,6 +2,7 @@ connection: "thelook"
 
 # include all the views
 include: "/views/**/*.view.lkml"
+include: "/views/lkmltem.dashboard"
 
 #datagroup: cm_2318_default_datagroup {
   datagroup: cm_2318_default_datagroup {
@@ -219,7 +220,11 @@ explore: test {}
 
 explore: test_space_in_column_name {}
 
-explore: users {}
+explore: users {
+  always_filter:  {
+    filters:  [users.city: "Abbeville,Adel", users.state: "Florida, Texas"]
+  }
+}
 
 explore: user_data {
   join: users {
