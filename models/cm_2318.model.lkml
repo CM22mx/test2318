@@ -21,7 +21,7 @@ explore: billion_orders {
 ####### test
 ############
 ##### testing comments
-
+# even can modify model file
 
   join: users {
     type: left_outer
