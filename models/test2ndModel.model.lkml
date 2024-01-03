@@ -19,6 +19,9 @@ include: "/views/*.view.lkml"                # include all views in the views/ f
 #   }
 # }
 
+# comment by the crator
+explore: order_items {}
+
 explore: employees {}
 
 #only creator can see it by now
