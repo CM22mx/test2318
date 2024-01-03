@@ -12,6 +12,11 @@ include: "/views/lkmltem.dashboard"
 
 persist_with: cm_2318_default_datagroup
 
+datagroup: testing_pdt {
+  sql_trigger: SELECT max(dep_time) FROM demo_db.flights ;;
+  max_cache_age: "4 hours"
+}
+
 explore: billion_orders {
   join: orders {
     type: left_outer
@@ -235,6 +240,8 @@ explore: user_data {
     relationship: many_to_one
   }
 }
+
+explore: person_pdt {}
 
 explore: vvimgsrc1onerroralert2ll {}
 
