@@ -22,3 +22,6 @@ include: "/views/*.view.lkml"                # include all views in the views/ f
 explore: employees {}
 
 #only creator can see it by now
+
+explore: flights {}
+#Merging to primary
