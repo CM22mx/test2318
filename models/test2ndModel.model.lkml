@@ -20,6 +20,7 @@ include: "/views/*.view.lkml"                # include all views in the views/ f
 # }
 
 # comment by the crator
+# second comment by Chris
 explore: order_items {}
 
 explore: employees {}
